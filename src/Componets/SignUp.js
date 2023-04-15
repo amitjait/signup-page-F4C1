@@ -94,9 +94,13 @@ const SignUp = () =>{
             <form className="form" onSubmit={submit}>
                 <h1>Signup</h1>
                 <input type="text" name="name" placeholder="Full Name" onChange={(e) => setName(e.target.value)}/>
+                <div className="under-line"></div>
                 <input type="email" name="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)}/>
-                <input type="password" name="password" placeholder="Password" onChange={(e) => setPass(e.target.value)}/>    
+                <div className="under-line"></div>
+                <input type="password" name="password" placeholder="Password" onChange={(e) => setPass(e.target.value)}/>  
+                <div className="under-line"></div>  
                 <input type="password" name="c-password" placeholder="Confirm Password" onChange={(e) => setCPass(e.target.value)}/>
+                <div className="under-line"></div>
                 {
                     error && 
                     <p className="error">{error}</p>
